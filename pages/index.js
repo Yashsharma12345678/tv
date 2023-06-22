@@ -5,22 +5,15 @@ import Results from '../components/Results'
 import requests from '../utils/requests'
 
 export default function Home({results}) {
-
-  // console.log(props)
+  
   return (
     <div>
       <Head>
         <title>yashTv</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <div>
-
-
-        {/* Header */}
         <Header/>
-
-        {/* Navbar */}
         <Navbar />
 
         <Results results={results}/>
