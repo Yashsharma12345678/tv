@@ -12,6 +12,7 @@ const Thumbnail = forwardRef(({result},ref) => {
 
     <div >
         <Image 
+        layout='responsive'
         src={`${BASE_URL}${result.backdrop_path || result.poster_path}` || `${BASE_URL}${result.poster_path}`} 
         height={120}
         width={120}
