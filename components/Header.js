@@ -16,7 +16,7 @@ function Header() {
             <HeaderItem title="Verified" Icon={CheckBadgeIcon}  />
             <HeaderItem title="Collection" Icon={RectangleStackIcon}  />
 
-            <Link href="/searchpage"><HeaderItem title="Search" Icon={MagnifyingGlassIcon}  /></Link>
+            <Link href="/Searchpage"><HeaderItem title="Search" Icon={MagnifyingGlassIcon}  /></Link>
             <HeaderItem title="Account" Icon={UserIcon}  />
         </div>
           <div>

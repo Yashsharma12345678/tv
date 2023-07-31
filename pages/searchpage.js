@@ -2,15 +2,10 @@ import Link from 'next/link'
 import { Router, useRouter } from 'next/router'
 import React, { useState } from 'react'
 
-const searchpage = () => {
+const Searchpage = () => {
   const [value,setValue] = useState('')
 
   const router = useRouter()
-
-  const handleClick = ()=>{
-    console.log(value)
-    // router.push(`/search/${value}`)}
-  }
   
   return (
     
@@ -43,4 +38,5 @@ const searchpage = () => {
   )
 }
 
-export default searchpage
+export default Searchpage
+
