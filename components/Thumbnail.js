@@ -2,12 +2,19 @@ import Image from 'next/image'
 import React from 'react'
 import { HandThumbUpIcon } from '@heroicons/react/24/outline';
 import { forwardRef } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 
 const Thumbnail = forwardRef(({result},ref) => {
+    const router = useRouter();
     
     const BASE_URL = "https://image.tmdb.org/t/p/original/"; 
   return (
     <>
+    {/* <Link> */}
+    <div onClick={()=> router.push(`/product/${result.id}`)}>
+
     <div ref={ref} className='group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>
 
     <div >
@@ -28,6 +35,7 @@ const Thumbnail = forwardRef(({result},ref) => {
         </p>
     </div>
     </div>
+      </div>
     </>
   )
 })

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Results from '../components/Results'
 import requests from '../utils/requests'
 
+
 export default function Home({results}) {
   
   return (
@@ -13,10 +14,12 @@ export default function Home({results}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Header/>
-        <Navbar />
+        
+      <Header />
+      <Navbar />
 
         <Results results={results}/>
+        
 
       </div>
     </div>

@@ -4,6 +4,7 @@ import { CheckBadgeIcon , HomeIcon, BoltIcon , MagnifyingGlassIcon , UserIcon} f
 import {RectangleStackIcon} from "@heroicons/react/24/solid" 
 
 import HeaderItem from './HeaderItem'
+import Link from 'next/link'
 
 function Header() {
   return (
@@ -14,7 +15,8 @@ function Header() {
             <HeaderItem title="Trending" Icon={BoltIcon}  />
             <HeaderItem title="Verified" Icon={CheckBadgeIcon}  />
             <HeaderItem title="Collection" Icon={RectangleStackIcon}  />
-            <HeaderItem title="Search" Icon={MagnifyingGlassIcon}  />
+
+            <Link href="/searchpage"><HeaderItem title="Search" Icon={MagnifyingGlassIcon}  /></Link>
             <HeaderItem title="Account" Icon={UserIcon}  />
         </div>
           <div>
